@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#183d32">
-  <meta name="description" content="Konfirmasi kehadiran untuk acara Hiking Bareng, Sabtu 7 November 2026.">
-  <title>Hiking Bareng — RSVP</title>
+  <meta name="theme-color" content="#0b1d36">
+  <meta name="description" content="TAAT — Touring Adventure Al-Irsyad Team. Informasi kegiatan dan konfirmasi peserta.">
+  <title>TAAT — Touring Adventure Al-Irsyad Team</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/theme.css">
+  <link rel="stylesheet" href="/taat.css">
   <script src="/rsvp.js" defer></script>
+  <script src="/event-config.js" defer></script>
 </head>
 <body>
-  <div class="topline"><span>OUTDOOR CLUB</span><span>WEEKEND ESCAPE <i></i> 2026</span></div>
+  <div class="topline"><span>TAAT COMMUNITY</span><span>TOURING ADVENTURE <i></i> 2026</span></div>
   <header class="site-header wrap">
-    <a class="brand" href="/" aria-label="Hiking Bareng, beranda">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 36 36" fill="none"><path d="M3 28 14.2 8l5.1 9 3.1-5.3L33 28H3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m10 28 6.1-10.8L22 28M23 28l4.1-7.1L31 28" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="m12.4 11 1.8 1.3 1.4-1.3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      </span>
-      <span>HIKING<span class="brand-light">BARENG</span></span>
+    <a class="brand taat-brand" href="/" aria-label="TAAT — Touring Adventure Al-Irsyad Team">
+      <img class="taat-logo" src="/taat-logo.webp" alt="Logo TAAT">
+      <span class="taat-wordmark"><strong>TAAT</strong><small>TOURING ADVENTURE AL-IRSYAD TEAM</small></span>
     </a>
     <a class="nav-link" href="#form">Isi RSVP <span aria-hidden="true">↗</span></a>
   </header>
@@ -27,17 +27,19 @@
   <main>
     <section class="hero wrap">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> ONE DAY OUT · OPEN INVITATION</p>
-        <h1>Keluar sebentar.<br><em>Pulang bawa cerita.</em></h1>
-        <p class="hero-description">Tinggalkan rutinitas sejenak. Mari jalan bareng, hirup udara segar, dan nikmati alam bersama.</p>
+        <p class="eyebrow"><span class="eyebrow-dot"></span> THE COMMUNITY · THE ADVENTURE</p>
+        <h1 class="taat-title">TAAT</h1>
+        <p class="taat-fullname">Touring Adventure<br>Al-Irsyad Team</p>
+        <div class="activity-pill"><span>KEGIATAN</span><strong id="activity-type">HIKING</strong></div>
+        <p class="hero-description" id="activity-description">Jelajah alam Gunung Sangar bersama TAAT. Satu perjalanan, banyak cerita.</p>
         <a class="button button-sun" href="#form">Konfirmasi kehadiran <span aria-hidden="true">↘</span></a>
-        <div class="hero-note"><span class="tiny-avatar">✳</span><span>Teman perjalanan baru, cerita yang sama.</span></div>
+        <div class="hero-note"><span class="tiny-avatar">✳</span><span>Explore together. Ride with purpose.</span></div>
       </div>
       <div class="hero-art hero-photo">
-        <img class="hero-photo-img" src="/gunung-sangar.jpg" alt="Panorama Gunung Sangar di Arjasari, Kabupaten Bandung" loading="eager">
+        <img class="hero-photo-img" src="/taat-hero.webp" alt="Anggota komunitas TAAT melakukan perjalanan hiking di jalur pegunungan" loading="eager">
         <div class="photo-shade"></div>
-        <div class="photo-heading">GUNUNG SANGAR <span>1.690 MDPL</span></div>
-        <a class="photo-credit" href="https://bandungbergerak.id/article/detail/159021/gunung-gunung-di-bandung-raya-tujuh-gunung-di-bandung-selatan-yang-menjadi-favorit-pendaki" target="_blank" rel="noopener">Foto: Gan Gan Jatnika / BandungBergerak.id</a>
+        <div class="photo-heading">TOURING ADVENTURE <span>AL-IRSYAD TEAM</span></div>
+        <div class="photo-tag">EST. TAAT COMMUNITY</div>
       </div>
       <div class="hero-meta">
         <div><span class="meta-icon">◷</span><span><small>HARI & TANGGAL</small><strong>Sabtu, 7 November 2026</strong></span></div>
@@ -50,8 +52,8 @@
       <div class="form-column" id="form">
         <div class="section-heading">
           <p class="eyebrow eyebrow-dark">SAVE YOUR SPOT</p>
-          <h2>Ikut jalan bareng?</h2>
-          <p>Isi konfirmasi singkat di bawah ini supaya panitia bisa menyiapkan perjalanan dengan lebih baik.</p>
+          <h2>Ikut kegiatan TAAT?</h2>
+          <p>Isi konfirmasi singkat di bawah ini supaya tim TAAT dapat menyiapkan kegiatan dengan lebih baik.</p>
         </div>
 
         <form id="rsvp-form" class="rsvp-card" novalidate>
@@ -91,7 +93,7 @@
           <div class="hp-field" aria-hidden="true"><label for="website">Jangan isi kolom ini</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
           <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
           <button class="button button-submit" id="submit-button" type="submit"><span>Kirim konfirmasi</span><span aria-hidden="true">↗</span></button>
-          <p class="privacy-note"><span aria-hidden="true">⌑</span> Data kamu hanya digunakan untuk kebutuhan koordinasi hiking ini.</p>
+          <p class="privacy-note"><span aria-hidden="true">⌑</span> Data kamu hanya digunakan untuk kebutuhan koordinasi kegiatan ini.</p>
         </form>
 
         <div class="success-card" id="success-card" hidden>
@@ -157,7 +159,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="wrap footer-inner"><a class="brand footer-brand" href="/"><span class="brand-mark">✳</span><span>HIKING<span class="brand-light">BARENG</span></span></a><span>SEE YOU OUT THERE <b>↗</b></span><a class="admin-link" href="/panitia.html">Akses panitia</a></div>
+    <div class="wrap footer-inner"><a class="brand footer-brand taat-brand" href="/"><img class="taat-logo footer-logo" src="/taat-logo.webp" alt=""><span class="taat-wordmark"><strong>TAAT</strong><small>TOURING ADVENTURE AL-IRSYAD TEAM</small></span></a><span>ADVENTURE IS BETTER TOGETHER <b>↗</b></span><a class="admin-link" href="/panitia.html">Akses panitia</a></div>
   </footer>
 </body>
 </html>

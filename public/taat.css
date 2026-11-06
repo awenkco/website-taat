@@ -1,0 +1,154 @@
+:root {
+  --pine: #0b1d36;
+  --pine-2: #142f52;
+  --moss: #42658d;
+  --sage: #e7edf5;
+  --cream: #ffffff;
+  --paper: #ffffff;
+  --sun: #ffffff;
+  --rust: #315b8c;
+  --ink: #10233e;
+  --muted: #596b82;
+  --line: #d9e1eb;
+}
+body { background:#fff; color:var(--ink); }
+.topline { background:#07172b; color:#eef3f9; }
+.topline i { background:#b9cbe0; }
+.site-header.wrap {
+  width:100%; max-width:none; height:82px; margin:0; padding:0 max(20px, calc((100% - 1160px) / 2));
+  background:#0b1d36; color:#fff;
+}
+.brand, .brand-mark, .nav-link { color:#fff; }
+.brand-light { color:#c7d4e4; }
+.nav-link { border-color:#637894; }
+.nav-link span { color:#fff; }
+.taat-brand { gap:12px; letter-spacing:0; }
+.taat-logo { display:block; width:45px; height:45px; flex:0 0 45px; object-fit:contain; }
+.taat-wordmark { display:flex; flex-direction:column; gap:2px; color:#fff; line-height:1; }
+.taat-wordmark strong { font-size:22px; font-weight:800; letter-spacing:.14em; }
+.taat-wordmark small { color:#c6d5e7; font-size:7px; font-weight:700; letter-spacing:.12em; }
+.hero { background:#0b1d36; color:#fff; }
+.hero-copy { padding-top:60px; }
+.hero .eyebrow { color:#dbe5f1; }
+.eyebrow-dot { background:#fff; box-shadow:0 0 0 4px #ffffff24; }
+.hero h1 { color:#fff; }
+.hero h1 em, .info-panel h3 em { color:#fff; }
+.taat-title { margin:18px 0 0 !important; font-family:var(--body) !important; font-size:clamp(66px,8vw,98px) !important; font-weight:800 !important; letter-spacing:.035em !important; line-height:.9 !important; }
+.taat-fullname { margin:13px 0 18px; color:#e6edf6; font-size:clamp(14px,1.8vw,19px); font-weight:600; letter-spacing:.02em; line-height:1.4; }
+.activity-pill { display:inline-flex; align-items:center; gap:10px; margin:1px 0 7px; padding:7px 11px; border:1px solid #8298b4; color:#e7eef7; }
+.activity-pill span { font-size:8px; font-weight:800; letter-spacing:.16em; }
+.activity-pill strong { color:#fff; font-size:10px; font-weight:800; letter-spacing:.12em; }
+.hero-description { color:#d7e1ee; }
+.button-sun { background:#fff; color:#0b1d36; }
+.button-sun:hover { background:#eaf0f7; }
+.button-sun span { color:#0b1d36; }
+.hero-note { color:#c6d4e6; }
+.tiny-avatar { border-color:#9bacc1; color:#fff; }
+.hero-art { background:#142b49; }
+.hero-photo { background:#142b49; }
+.hero-photo::before { opacity:.08; }
+.hero-photo-img { object-position:center 42%; }
+.photo-shade { background:linear-gradient(180deg,rgba(7,23,43,.38),transparent 40%,transparent 64%,rgba(7,23,43,.48)); }
+.photo-heading { color:#fff; text-shadow:0 2px 12px #061529aa; }
+.photo-heading span { color:#e7edf5; }
+.photo-tag { position:absolute; z-index:2; top:82px; left:29px; padding:5px 8px; border:1px solid #ffffff9a; color:#fff; font-size:7px; letter-spacing:.16em; font-weight:800; }
+.photo-credit { display:none; }
+.hero-meta { background:#fff; color:#0b1d36; border-bottom:1px solid #d9e1eb; }
+.meta-icon { color:#214b79; border-color:#d5dfeb; }
+.hero-meta small { color:#657991; }
+.content-grid { background:#fff; }
+.eyebrow-dark { color:#526b88; }
+.section-heading h2, .success-card h2 { color:#0b1d36; }
+.section-heading > p:last-child { color:#566a83; }
+.rsvp-card, .success-card { background:#fff; border-color:#dbe3ed; }
+.form-topline { color:#637892; border-color:#dce4ee; }
+.field label, .field legend { color:#10233e; }
+.field label > span:not(.optional), .field legend > span { color:#315b8c; }
+.field input:not([type="radio"]), .field textarea { background:#fff; border-color:#cfd9e6; color:#10233e; }
+.field input:focus, .field textarea:focus { border-color:#315b8c; box-shadow:0 0 0 3px #315b8c19; }
+.field input::placeholder, .field textarea::placeholder { color:#9aa9ba; }
+.field small { color:#6d7f94; }
+.choice-card { border-color:#d3deea; }
+.choice-card.is-selected { border-color:#315b8c; background:#edf2f8; box-shadow:inset 0 0 0 1px #315b8c; }
+.choice-check { color:#173e68; }
+.choice-card small { color:#687c94; }
+.button-submit { background:#0b1d36; color:#fff; }
+.button-submit:hover { background:#173a63; }
+.form-message { color:#8d3640; }
+.form-message:not(:empty) { background:#f9ecee; }
+.privacy-note { color:#6b7f96; }
+.privacy-note span { color:#244b78; }
+.success-icon { background:#e7edf5; color:#0b1d36; }
+.text-button { border-color:#315b8c; color:#0b1d36; }
+.text-button span { color:#315b8c; }
+.info-panel, .gear-panel { background:#f2f5f9; border:1px solid #dce4ee; }
+.info-panel h3, .route-panel h3, .gear-panel h3 { color:#0b1d36; }
+.info-panel h3 em, .gear-panel h3 em { color:#315b8c; }
+.panel-top { color:#637991; }
+.leaf-mark, .route-symbol { color:#315b8c; }
+.plan-row { border-color:#d6e0eb; }
+.plan-number { color:#8292a6; }
+.plan-row p, .route-intro, .gear-intro { color:#536a85; }
+.plan-row strong, .route-list li strong { color:#102d4f; }
+.panel-foot { border-color:#d6e0eb; color:#647a93; }
+.route-panel { background:#fff; border-color:#dce4ee; }
+.route-list::before { background:#b9c8d9; }
+.route-list li { color:#405974; }
+.route-list li::before { border-color:#bdcada; background:#fff; color:#486582; }
+.route-list li:first-child::before, .route-list li:last-child::before { border-color:#315b8c; background:#eaf0f7; color:#102d4f; }
+.route-list li span { color:#75879c; }
+.map-link { color:#234d7c; text-decoration-color:#9eb0c4; }
+.gear-list li { border-color:#d6e0eb; color:#263f5d; }
+.gear-check { background:#dfe8f2; color:#173f6b; }
+.note-panel { background:#fff; border-color:#dce4ee; }
+.note-icon { color:#315b8c; }
+.note-panel p { color:#596f88; }
+.aside-caption { color:#72859b; }
+.site-footer { background:#07172b; color:#edf3fa; }
+.footer-brand { color:#fff; }
+.footer-brand .brand-light { color:#c6d5e7; }
+.footer-brand .brand-mark { color:#fff; }
+.footer-logo { width:39px; height:39px; flex-basis:39px; }
+.footer-inner > span { color:#c5d3e3; }
+.footer-inner > span b { color:#fff; }
+.admin-link { color:#d5e0ed; }
+.admin-shell { color:#10233e; }
+.admin-head h1 { color:#0b1d36; }
+.admin-head p { color:#5b6e84; }
+.back-link { border-color:#9aaabd; color:#173a63; }
+.summary-tile, .table-panel { background:#fff; border-color:#dce4ee; }
+.summary-tile span, th { color:#627790; }
+.summary-tile strong { color:#0b1d36; }
+th { background:#f2f5f9; }
+td { border-color:#e6ebf1; color:#203b5b; }
+.status.yes { background:#e7edf5; color:#173e68; }
+.status.no { background:#f0f2f5; color:#606f80; }
+.admin-footnote { color:#687b91; }
+.admin-message { color:#8d3640; }
+.event-settings { margin:0 0 24px; padding:24px; border:1px solid #dce4ee; background:#f5f7fa; }
+.settings-heading { display:flex; justify-content:space-between; align-items:flex-start; gap:15px; }
+.settings-heading h2 { margin:7px 0 4px; color:#0b1d36; font:500 30px/1.08 var(--display); letter-spacing:-.03em; }
+.settings-heading p:last-child { margin:0; max-width:620px; color:#5b6e84; font-size:11px; line-height:1.7; }
+.settings-mark { color:#315b8c; font-size:24px; }
+.settings-fields { display:grid; grid-template-columns:minmax(180px,.7fr) minmax(260px,1.3fr); gap:14px; margin-top:21px; }
+.settings-fields label { display:block; color:#183757; font-size:10px; font-weight:800; }
+.settings-fields input, .settings-fields textarea { display:block; width:100%; margin-top:7px; padding:11px 12px; border:1px solid #cbd7e5; border-radius:0; outline:none; background:white; color:#10233e; font:500 12px var(--body); }
+.settings-fields input:focus, .settings-fields textarea:focus { border-color:#315b8c; box-shadow:0 0 0 3px #315b8c18; }
+.settings-fields textarea { resize:vertical; min-height:74px; }
+.settings-actions { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-top:15px; }
+.settings-actions p { margin:0; color:#315b8c; font-size:10px; }
+.settings-actions .export-button { background:#0b1d36; color:#fff; }
+.settings-actions .export-button:disabled { opacity:.5; cursor:wait; }
+@media(max-width:700px) {
+  .site-header.wrap { height:72px; padding-inline:16px; }
+  .taat-logo { width:39px; height:39px; flex-basis:39px; }
+  .taat-wordmark strong { font-size:19px; }
+  .taat-wordmark small { max-width:175px; font-size:6px; letter-spacing:.08em; }
+  .taat-title { font-size:72px !important; }
+  .photo-tag { top:74px; left:22px; }
+  .settings-fields { grid-template-columns:1fr; }
+  .event-settings { padding:19px; }
+  .settings-heading h2 { font-size:26px; }
+  .settings-actions { align-items:stretch; flex-direction:column; }
+  .settings-actions .export-button { width:100%; }
+}
