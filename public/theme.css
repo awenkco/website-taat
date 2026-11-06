@@ -122,6 +122,31 @@ button, a, input, textarea { -webkit-tap-highlight-color: transparent; }
 .note-panel strong { font-size: 11px; }
 .note-panel p { margin: 4px 0 0; color: var(--muted); font-size: 10px; line-height: 1.7; }
 .aside-caption { margin: 17px 3px 0; color: #939c8f; font-size: 8px; font-weight: 700; letter-spacing: .12em; line-height: 1.7; }
+.hero-photo { background: #234a3d; }
+.hero-photo::before { z-index: 1; background-image: linear-gradient(90deg, rgba(13, 36, 27, .14), transparent 58%), radial-gradient(#e6ebd6 0.65px, transparent .65px); opacity: .12; }
+.hero-photo-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 48%; }
+.photo-shade { position: absolute; z-index: 1; inset: 0; background: linear-gradient(180deg, rgba(12, 36, 28, .34), transparent 37%, transparent 65%, rgba(12, 36, 28, .42)); }
+.photo-heading { position: absolute; z-index: 2; top: 28px; left: 29px; display: flex; flex-direction: column; gap: 3px; color: white; font-size: 10px; font-weight: 800; letter-spacing: .17em; text-shadow: 0 1px 8px #10251e88; }
+.photo-heading span { font-size: 8px; letter-spacing: .2em; color: #f5d59b; }
+.photo-credit { position: absolute; z-index: 2; right: 15px; bottom: 14px; max-width: calc(100% - 30px); padding: 5px 8px; background: rgba(18, 42, 33, .72); color: #f6f3e9; font-size: 8px; line-height: 1.4; }
+.map-link { display: inline-block; margin-top: 7px; color: #365e46; font-size: 9px; font-weight: 800; text-decoration: underline; text-decoration-color: #9eae9a; text-underline-offset: 3px; }
+.route-panel { margin-top: 17px; padding: 25px 29px 23px; border: 1px solid #e4e5db; background: #fffdf7; }
+.route-symbol { color: var(--rust); font-size: 18px; }
+.route-panel h3, .gear-panel h3 { margin: 14px 0 6px; color: var(--pine); font-family: var(--display); font-size: 31px; font-weight: 500; letter-spacing: -.03em; line-height: 1.08; }
+.route-intro, .gear-intro { margin: 0 0 17px; color: var(--muted); font-size: 10px; line-height: 1.7; }
+.route-list { position: relative; list-style: none; margin: 0; padding: 0 0 0 28px; counter-reset: route; }
+.route-list::before { content: ""; position: absolute; top: 10px; bottom: 13px; left: 8px; width: 1px; background: #cdd8c8; }
+.route-list li { position: relative; min-height: 29px; padding: 5px 0 5px 3px; color: #596b5d; font-size: 10px; counter-increment: route; }
+.route-list li::before { content: counter(route, decimal-leading-zero); position: absolute; left: -28px; top: 5px; display: grid; width: 17px; height: 17px; place-items: center; border: 1px solid #cbd6c7; border-radius: 50%; background: #fffdf7; color: #80917e; font-size: 7px; font-weight: 800; }
+.route-list li strong { color: var(--pine); }
+.route-list li span { display: block; margin-top: 1px; color: #8a9588; font-size: 8px; }
+.route-list li:first-child::before, .route-list li:last-child::before { border-color: var(--moss); background: #e7ebdd; color: var(--pine); }
+.route-map-link { margin-top: 16px; }
+.gear-panel { margin-top: 17px; padding: 25px 29px 22px; background: #e7ebdd; }
+.gear-panel h3 em { color: var(--moss); font-weight: 500; }
+.gear-list { display: grid; grid-template-columns: 1fr; gap: 0; margin: 0; padding: 0; list-style: none; }
+.gear-list li { display: flex; align-items: center; gap: 10px; min-height: 39px; border-top: 1px solid #cfd8ca; color: #435b49; font-size: 10px; font-weight: 600; }
+.gear-check { display: grid; flex: 0 0 19px; height: 19px; place-items: center; border-radius: 50%; background: #d2dfcc; color: #315b41; font-size: 10px; font-weight: 800; }
 .site-footer { background: var(--pine); color: #d8e1d2; }
 .footer-inner { min-height: 89px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .footer-brand { color: #e6ecdf; font-size: 11px; }
@@ -169,6 +194,8 @@ button, a, input, textarea { -webkit-tap-highlight-color: transparent; }
   .choice-card strong { font-size: 10px; }
   .choice-card small { font-size: 8px; }
   .info-panel { padding: 24px 24px 20px; }
+  .route-panel, .gear-panel { padding: 22px 22px 20px; }
+  .photo-heading { top: 22px; left: 22px; }
   .footer-inner { min-height: 78px; flex-wrap: wrap; padding-block: 16px; }
   .footer-inner > span { display: none; }
 }
